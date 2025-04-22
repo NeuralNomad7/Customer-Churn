@@ -33,6 +33,7 @@ Churn_Prediction/
 - Categorical encoding using One-Hot Encoding
 - BMI binning (underweight, healthy, overweight, obese)
 - Created new binary target variable: `churn_risk` = 1 if charges > median
+- Created many visualisations
 
 ### 3. Model Building
 Tried out and tuned the following classification models:
@@ -48,27 +49,17 @@ Metrics used:
 - F1-Score
 - ROC AUC Curve
 
-Also includes:
-- Cross-validation
-- Confusion matrices
-- Feature importance graphs
-
-### 5. Hyperparameter Tuning
-Used `GridSearchCV` for:
-- Random Forest
-- XGBoost
 
 ---
 
 ## 📊 Key Results
 
-| Model                | Accuracy | Precision | Recall | F1-Score | AUC  |
-|---------------------|----------|-----------|--------|----------|------|
-| Logistic Regression |   XX%    |   XX%     |  XX%   |   XX%    |  XX  |
-| Random Forest       |   XX%    |   XX%     |  XX%   |   XX%    |  XX  |
-| XGBoost             |   XX%    |   XX%     |  XX%   |   XX%    |  XX  |
+Model                 Accuracy	         ROC-AUC
+Logistic Regression	  0.910448	         0.911745
+Random Forest	        0.932836	         0.930272
+XGBoost	              0.925373	         0.922749
 
-> XGBoost performed best with the highest AUC and F1-Score.
+> RandomForest performed best performed best 
 
 ---
 
@@ -76,7 +67,7 @@ Used `GridSearchCV` for:
 
 - **Smoking status** and **BMI** are top predictors of high insurance charges.
 - The churn risk model can help insurance companies **proactively retain customers** by identifying high-risk profiles.
-- Logistic Regression is interpretable, but **XGBoost** provides the best performance.
+- Logistic Regression is interpretable, but **RandomForestt** provides the best performance.
 - Further improvements could include adding more behavioral or historical features.
 
 ---
@@ -86,9 +77,6 @@ Used `GridSearchCV` for:
 1. Clone the repo or download the files.
 2. Install required packages:
 
-```bash
-pip install -r requirements.txt
-```
 
 3. Open the notebook:
 
@@ -108,8 +96,6 @@ jupyter notebook Churn_Prediction.ipynb
 - xgboost
 - jupyter
 
----
 
-## 📬 Contact
 
-For questions or collaborations, feel free to connect with **Ankit Desai** via [LinkedIn](https://www.linkedin.com/in/ankitdesai1998/).
+
