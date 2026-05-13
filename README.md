@@ -59,7 +59,7 @@ Logistic Regression	  0.910448	         0.911745
 Random Forest	        0.932836	         0.930272
 XGBoost	              0.925373	         0.922749
 
-> RandomForest performed best performed best 
+> Random Forest performed best.
 
 ---
 
@@ -67,7 +67,7 @@ XGBoost	              0.925373	         0.922749
 
 - **Smoking status** and **BMI** are top predictors of high insurance charges.
 - The churn risk model can help insurance companies **proactively retain customers** by identifying high-risk profiles.
-- Logistic Regression is interpretable, but **RandomForestt** provides the best performance.
+- Logistic Regression is interpretable, but **Random Forest** provides the best performance.
 - Further improvements could include adding more behavioral or historical features.
 
 ---
@@ -76,13 +76,19 @@ XGBoost	              0.925373	         0.922749
 
 1. Clone the repo or download the files.
 2. Install required packages:
-
-
+   ```bash
+   pip install -r requirements.txt
+   ```
 3. Open the notebook:
+   ```bash
+   jupyter notebook Churn_Prediction.ipynb
+   ```
 
-```bash
-jupyter notebook Churn_Prediction.ipynb
-```
+---
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE).
 
 ---
 
